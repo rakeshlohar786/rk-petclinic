@@ -1,4 +1,4 @@
-package com.ex.rkpetclinic.model;
+package rkpetclinic.model;
 
 public class Vet extends Person {
 }
