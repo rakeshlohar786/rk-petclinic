@@ -3,10 +3,11 @@ package rkpetclinic.service.map;
 import rkpetclinic.model.Pet;
 import rkpetclinic.service.CrudService;
 import rkpetclinic.service.PetService;
+import rkpetclinic.service.VetService;
 
 import java.util.Set;
 
-public class PerServiceMap extends AbstractMapService<Pet,Long> implements CrudService<Pet,Long>
+public class PerServiceMap extends AbstractMapService<Pet,Long> implements PetService
 {
     @Override
     public Set<Pet> findAll() {
