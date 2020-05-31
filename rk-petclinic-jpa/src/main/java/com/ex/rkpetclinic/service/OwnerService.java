@@ -1,6 +1,6 @@
-package rkpetclinic.service;
+package com.ex.rkpetclinic.service;
 
-import rkpetclinic.model.Owner;
+import com.ex.rkpetclinic.model.Owner;
 
 
 

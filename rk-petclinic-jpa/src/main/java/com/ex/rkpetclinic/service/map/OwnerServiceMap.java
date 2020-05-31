@@ -1,11 +1,12 @@
-package rkpetclinic.service.map;
+package com.ex.rkpetclinic.service.map;
 
-import rkpetclinic.model.Owner;
-import rkpetclinic.service.CrudService;
-import rkpetclinic.service.OwnerService;
+import com.ex.rkpetclinic.model.Owner;
+import com.ex.rkpetclinic.service.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner,Long>
         implements OwnerService
 {

@@ -1,4 +1,4 @@
-package rkpetclinic.service;
+package com.ex.rkpetclinic.service;
 
 import java.util.Set;
 

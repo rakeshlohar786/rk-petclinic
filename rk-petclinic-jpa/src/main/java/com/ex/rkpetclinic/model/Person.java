@@ -1,4 +1,4 @@
-package rkpetclinic.model;
+package com.ex.rkpetclinic.model;
 
 public class Person extends BaseEntity{
 

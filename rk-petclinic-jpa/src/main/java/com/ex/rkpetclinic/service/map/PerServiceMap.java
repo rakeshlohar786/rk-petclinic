@@ -1,12 +1,12 @@
-package rkpetclinic.service.map;
+package com.ex.rkpetclinic.service.map;
 
-import rkpetclinic.model.Pet;
-import rkpetclinic.service.CrudService;
-import rkpetclinic.service.PetService;
-import rkpetclinic.service.VetService;
+import com.ex.rkpetclinic.model.Pet;
+import com.ex.rkpetclinic.service.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PerServiceMap extends AbstractMapService<Pet,Long> implements PetService
 {
     @Override
