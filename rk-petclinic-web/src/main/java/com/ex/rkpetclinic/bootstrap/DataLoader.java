@@ -23,13 +23,11 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Owner owner1 = new Owner();
-        owner1.setId(1L);
         owner1.setFirstName("Rakesh");
         owner1.setSecondName("Lohar");
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setId(2L);
         owner2.setFirstName("Lalit");
         owner2.setSecondName("Desai");
         ownerService.save(owner2);
@@ -37,13 +35,11 @@ public class DataLoader implements CommandLineRunner {
         System.out.println("Owner Data Loaded...........");
 
         Vet vet1 = new Vet();
-        vet1.setId(1L);
         vet1.setFirstName("Jay");
         vet1.setSecondName("Pandey");
         vetService.save(vet1);
 
         Vet vet2 = new Vet();
-        vet2.setId(2L);
         vet2.setFirstName("Ivyanka");
         vet2.setSecondName("Trump");
         vetService.save(vet2);
