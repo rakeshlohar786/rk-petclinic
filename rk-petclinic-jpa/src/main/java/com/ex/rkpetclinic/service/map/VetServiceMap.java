@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -27,7 +27,7 @@ public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetSe
     @Override
     public void delete(Vet object) {
 
-         super.delete(object);
+        super.delete(object);
     }
 
     @Override
