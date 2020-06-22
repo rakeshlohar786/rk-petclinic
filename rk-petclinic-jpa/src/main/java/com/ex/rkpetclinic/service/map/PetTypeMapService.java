@@ -2,10 +2,12 @@ package com.ex.rkpetclinic.service.map;
 
 import com.ex.rkpetclinic.model.PetType;
 import com.ex.rkpetclinic.service.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 import java.util.Set;
 
+@Service
 public class PetTypeMapService extends AbstractMapService<PetType,Long> implements PetTypeService
 {
     @Override
