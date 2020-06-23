@@ -1,5 +1,6 @@
 package com.ex.rkpetclinic.bootstrap;
 
+import com.ex.rkpetclinic.model.Pet;
 import com.ex.rkpetclinic.model.PetType;
 import com.ex.rkpetclinic.service.PetTypeService;
 import org.springframework.boot.CommandLineRunner;
@@ -8,6 +9,8 @@ import com.ex.rkpetclinic.model.Owner;
 import com.ex.rkpetclinic.model.Vet;
 import com.ex.rkpetclinic.service.OwnerService;
 import com.ex.rkpetclinic.service.VetService;
+
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -40,11 +43,31 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setFirstName("Rakesh");
         owner1.setSecondName("Lohar");
+        owner1.setAddress("B-704 Viva Kingston Cronw Bldg");
+        owner1.setCity("Virar Mumba");
+        owner1.setTelephone("121233");
+
+        Pet sheru = new Pet();
+        sheru.setPetType(dog);
+        sheru.setBirthDate(LocalDate.now());
+        sheru.setOwner(owner1);
+        sheru.setName("Sheru");
+        owner1.getPets().add(sheru);
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
         owner2.setFirstName("Lalit");
         owner2.setSecondName("Desai");
+        owner2.setAddress("B-704 Viva Kingston Cronw Bldg");
+        owner2.setCity("Virar Mumba");
+        owner2.setTelephone("121233");
+
+        Pet simmi = new Pet();
+        simmi.setPetType(cat);
+        simmi.setBirthDate(LocalDate.now());
+        simmi.setOwner(owner1);
+        simmi.setName("Simmi");
+        owner2.getPets().add(sheru);
         ownerService.save(owner2);
 
         Vet vet1 = new Vet();
