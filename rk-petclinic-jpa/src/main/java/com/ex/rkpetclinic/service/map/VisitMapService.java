@@ -2,12 +2,14 @@ package com.ex.rkpetclinic.service.map;
 
 import com.ex.rkpetclinic.model.Visit;
 import com.ex.rkpetclinic.service.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import javax.sound.midi.VoiceStatus;
 import java.util.Set;
 
 @Service
+@Profile({"default","map"})
 public class VisitMapService extends AbstractMapService<Visit,Long>
              implements VisitService
 {
