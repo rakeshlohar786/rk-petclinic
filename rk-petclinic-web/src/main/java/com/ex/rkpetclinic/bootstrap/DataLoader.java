@@ -60,13 +60,13 @@ public class DataLoader implements CommandLineRunner {
         dentistry.setDecription("Dentistry");
         Speciality savedDentistry = specialityService.save(dentistry);
 
-
         Owner owner1 = new Owner();
         owner1.setFirstName("Rakesh");
         owner1.setLastName("Lohar");
         owner1.setAddress("B-704 Viva Kingston Cronw Bldg");
         owner1.setCity("Virar Mumba");
         owner1.setTelephone("121233");
+
 
         Pet sheru = new Pet();
         sheru.setPetType(dog);
