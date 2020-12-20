@@ -15,10 +15,38 @@ import java.util.Set;
 @Table(name="vets")
 public class Vet extends Person {
 
-    @ManyToMany(fetch = FetchType.EAGER)
+	
+	/**@Rakesh 13-Dec-2020 eclipse shift transferred
+    public Vet(Long id, String firstName, String lastName) {
+		super(id, firstName, lastName);
+		// TODO Auto-generated constructor stub
+	}
+    
+    public Vet() {
+    	super();
+    }
+    //@Rakesh 13-Dec-2020**/
+
+	private static final long serialVersionUID = 4552L;
+	@ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name="vet_specialities", joinColumns = @JoinColumn(name="vet_id"),
     inverseJoinColumns = @JoinColumn(name="speciality_id"))
-    private Set<Speciality> specialities = new HashSet<>();
+
+	//@Rakesh 13-Dec-2020 eclipse code shift transferred
+	private Set<Speciality> specialities = new HashSet<>();
+
+	
+	/**@Rakesh 13-Dec-2020 eclipse code shift transferred
+	public Set<Speciality> getSpecialities() {
+		return specialities;
+	//@Rakesh 13-Dec-2020	
+	}
+
+	public void setSpecialities(Set<Speciality> specialities) {
+		this.specialities = specialities;
+	}**/
+    
+    
 
 
 }
