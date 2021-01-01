@@ -22,27 +22,4 @@ public class BaseEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-   /**@Rakesh 13-Dec-2020 eclipse transfer code needs to be modified
-	
-    public BaseEntity() {
-    	
-    }
-	public BaseEntity(Long id) {
-		super();
-		this.id = id;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-	
-	
-	@Rakesh 13-Dec-2020 end **/
-    
-    
-
 }
